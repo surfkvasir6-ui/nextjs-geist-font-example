@@ -4,11 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useState } from 'react';
-import CurrencyToggle from './CurrencyToggle';
+//import CurrencyToggle from './CurrencyToggle';
 
 export default function DashboardHeader() {
   const { isDarkMode, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  
 
   return (
     <header className={`${isDarkMode ? 'bg-[#121212] border-gray-800' : 'bg-white border-gray-200'} border-b px-6 py-4 transition-colors duration-200`}>
